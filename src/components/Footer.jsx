@@ -4,7 +4,7 @@ import icon from "./assets/icon.svg";
 
 const Footer = () => {
   return (
-    <StyledFooter>
+    <StyledFooter id="contact">
       <StyledLetterContainer>
         <StyledDescription>
           <h1>Sign Up For Newsletter</h1>
@@ -33,7 +33,7 @@ const Footer = () => {
 export default Footer;
 
 const StyledFooter = styled.div`
-  height: 100vh;
+  height: 80vh;
   display: grid;
   place-items: center;
 `;

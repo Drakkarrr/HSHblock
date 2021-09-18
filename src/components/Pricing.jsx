@@ -3,7 +3,7 @@ import Cards from "./Cards";
 
 const Pricing = () => {
   return (
-    <StyledSection>
+    <StyledSection id="pricing">
       <StyledDescription>
         <h4>Choose A Plan</h4>
         <h2>Flexible Pricing Plans</h2>
@@ -34,6 +34,7 @@ const StyledDescription = styled.div`
   place-items: center;
   height: 10rem;
   width: 60%;
+  margin-top: 4rem;
   h4 {
     font-size: 1rem;
     letter-spacing: 1px;

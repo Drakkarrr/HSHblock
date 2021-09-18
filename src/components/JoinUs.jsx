@@ -3,7 +3,7 @@ import SmallCards from "./Cards-small";
 
 const JoinUs = () => {
   return (
-    <StyledSection>
+    <StyledSection id="about">
       <StyledText>
         <h1>Join The Crypto Exchange</h1>
         <p>Invest in cryptocurrency with the most trusted crypto company</p>
@@ -48,7 +48,8 @@ const StyledSection = styled.section`
   display: grid;
   grid-template-rows: 1fr 4fr;
   place-items: center;
-  margin-top: 2rem;
+  padding-top: 3rem;
+  height: 100vh;
 `;
 
 const StyledText = styled.div`

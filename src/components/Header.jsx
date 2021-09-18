@@ -8,10 +8,21 @@ const Header = () => {
         <img src={logo} alt="Logo of the site" />
       </StyledLogoContainer>
       <StyledLinks>
-        <li>Home</li>
-        <li>Services</li>
-        <li>See whitepaper</li>
-        <li>Contact Us</li>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About Us</a>
+        </li>
+        <li>
+          <a href="#roadmap">Roadmap</a>
+        </li>
+        <li>
+          <a href="#pricing">Pricing</a>
+        </li>
+        <li>
+          <a href="#contact">Contact Us</a>
+        </li>
       </StyledLinks>
     </StyledHeader>
   );
@@ -22,8 +33,12 @@ const StyledHeader = styled.nav`
   justify-content: space-around;
   align-items: center;
   background: #60339a;
-  height: 4.5rem;
+  position: fixed;
+  top: 0;
+  height: 4rem;
+  width: 100vw;
   padding: 1rem 8rem;
+  z-index: 3;
 `;
 
 const StyledLogoContainer = styled.div`
@@ -43,6 +58,10 @@ const StyledLinks = styled.div`
   justify-content: space-evenly;
   list-style: none;
   cursor: pointer;
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
 `;
 
 export default Header;

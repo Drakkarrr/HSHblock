@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <StyledHome>
+    <StyledHome id="home">
       <StyledDescription>
         <h4>Most Trusted Crypto Company</h4>
         <h1>
@@ -31,6 +31,7 @@ export default Home;
 
 const StyledHome = styled.section`
   height: 100vh;
+  padding-top: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
