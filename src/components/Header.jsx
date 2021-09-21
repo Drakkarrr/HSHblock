@@ -1,11 +1,11 @@
-import logo from "./assets/logo.png";
+import boxlogo from "./assets/boxlogo.png";
 import styled from "styled-components";
 
 const Header = () => {
   return (
     <StyledHeader>
       <StyledLogoContainer>
-        <img src={logo} alt="Logo of the site" />
+        <img src={boxlogo} alt="Logo of the site" />
       </StyledLogoContainer>
       <StyledLinks>
         <li>
@@ -13,9 +13,6 @@ const Header = () => {
         </li>
         <li>
           <a href="#about">About Us</a>
-        </li>
-        <li>
-          <a href="#roadmap">Roadmap</a>
         </li>
         <li>
           <a href="#pricing">Pricing</a>
@@ -60,7 +57,10 @@ const StyledLinks = styled.div`
   cursor: pointer;
   a {
     text-decoration: none;
-    color: #ffffff;
+    color: #f8a70a;
+    &:hover {
+      color: #f86bc3;
+    }
   }
 `;
 

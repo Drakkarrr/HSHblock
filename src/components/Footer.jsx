@@ -33,6 +33,7 @@ const Footer = () => {
 export default Footer;
 
 const StyledFooter = styled.div`
+  margin-top: 6rem;
   height: 80vh;
   display: grid;
   place-items: center;

@@ -1,9 +1,11 @@
 import GlobalStyle from "./styles";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import JoinUs from "./components/JoinUs";
-import Works from "./components/Works";
-// import Blogs from "./components/Blogs";
+import AboutUs from "./components/AboutUs";
+import AboutUss from "./components/AboutUss";
+import Aim from "./components/M&V";
+import AboutUsss from "./components/AboutUsss";
+import StatsTable from "./components/StatsTable";
 import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
 function App() {
@@ -12,9 +14,11 @@ function App() {
       <GlobalStyle />
       <Header />
       <Home />
-      <JoinUs />
-      <Works />
-      {/* <Blogs /> */}
+      <AboutUs />
+      <AboutUss />
+      <Aim />
+      <AboutUsss />
+      <StatsTable />
       <Pricing />
       <Footer />
     </div>

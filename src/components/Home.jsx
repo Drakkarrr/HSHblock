@@ -1,28 +1,28 @@
 import styled from "styled-components";
-import building from "./assets/building.png";
+import logo from "./assets/hblogo.png";
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <StyledHome id="home">
+      <StyledImage>
+        <img src={logo} alt="Block logo og hashblock" />
+      </StyledImage>
       <StyledDescription>
-        <h4>Most Trusted Crypto Company</h4>
-        <h1>
-          The Future <br /> Token Economy
-        </h1>
-        <p>Buy, sell and trade crypto to unlock the future of finance</p>
+        <h4>Welcome to</h4>
+        <h1>HSHBLOCK !</h1>
+        <p>
+          A secured &amp; trusted community friendly crypto trading &amp;
+          exchange platform for everybody.
+        </p>
         <div className="buttons">
           <button>
-            <Link to="#">Buy Now</Link>
-          </button>
-          <button>
-            <Link to="#">Download Whitepaper</Link>
+            <Link to="#" target="_blank">
+              See Our Whitepaper
+            </Link>
           </button>
         </div>
       </StyledDescription>
-      <StyledImage>
-        <img src={building} alt="Building" />
-      </StyledImage>
     </StyledHome>
   );
 };
@@ -51,7 +51,8 @@ const StyledDescription = styled.div`
     padding: 1rem;
   }
   h1 {
-    font-size: 3.5rem;
+    font-size: 5.5rem;
+    color: #f8a70a;
     line-height: 1.3;
     padding: 1rem;
   }
@@ -61,7 +62,7 @@ const StyledDescription = styled.div`
   }
   button {
     border: 1px solid #f86bc3;
-    color: #ffffff;
+    color: #f8a70a;
     background: none;
     font-size: 1rem;
     padding: 1rem 2rem;
@@ -75,14 +76,14 @@ const StyledDescription = styled.div`
   }
   a {
     text-decoration: none;
-    color: #ffffff;
+    color: #f8a70a;
   }
 `;
 
 const StyledImage = styled.div`
-  height: 34rem;
+  height: 35rem;
   img {
-    height: 100%;
+    height: 90%;
     width: auto;
   }
 `;

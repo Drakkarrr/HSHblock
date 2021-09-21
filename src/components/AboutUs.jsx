@@ -1,41 +1,36 @@
 import styled from "styled-components";
-import SmallCards from "./Cards-small";
+import boxlogo from "./assets/boxlogo.png";
 
 const JoinUs = () => {
   return (
     <StyledSection id="about">
-      <StyledText>
-        <h1>Join The Crypto Exchange</h1>
-        <p>Invest in cryptocurrency with the most trusted crypto company</p>
-      </StyledText>
       <CardContainer>
         <CardsSmall>
+          {/* <SmallCards />
           <SmallCards />
-          <SmallCards />
-          <SmallCards />
+          <SmallCards /> */}
         </CardsSmall>
         <CardBig>
           <BigCard>
-            <h2>Coming Soon!</h2>
+            <img src={boxlogo} alt="Block logo" />
+            <h1>WHAT IS HSHBLOCK?</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut
-              eos commodi nihil officia ad laborum, voluptatem expedita, velit,
-              nemo quam aspernatur modi. Provident voluptatem fugit
-              reprehenderit sapiente, facere repudiandae ratione tempora, porro
-              non. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Quis, deserunt.
+              HSHBLOCK is a wide platform that is focused on helping the
+              community through our multiple play to earn game features. It is a
+              platform integrated into Binance Smart Chain that will
+              revolutionize the NFT gaming award system such as: In-game
+              rewards, NFT/$BLOCK staking, and Player-to-Player Tradeoff. <br />
               <br />
-              <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              quia commodi quis quisquam veritatis error ea exercitationem
-              veniam, itaque perferendis.
+              HSHBLOCK will also engage in trading and exchange platforms and
+              other blockchain services. Through our $BLOCK token, we will
+              achieve all our long-term plans for the good of our community.
             </p>
           </BigCard>
         </CardBig>
         <CardsSmall>
+          {/* <SmallCards />
           <SmallCards />
-          <SmallCards />
-          <SmallCards />
+          <SmallCards /> */}
         </CardsSmall>
       </CardContainer>
     </StyledSection>
@@ -52,22 +47,9 @@ const StyledSection = styled.section`
   height: 100vh;
 `;
 
-const StyledText = styled.div`
-  text-align: center;
-  padding: 1rem;
-  h1 {
-    padding-bottom: 1rem;
-    font-size: 3rem;
-  }
-  p {
-    opacity: 0.5;
-  }
-`;
-
 const CardContainer = styled.div`
   height: 80%;
   width: 100%;
-  margin-top: 4rem;
   padding: 1rem 3rem;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -85,7 +67,6 @@ const CardsSmall = styled.div`
 
 const CardBig = styled.div`
   position: relative;
-  top: -40px;
   display: grid;
   margin: 0;
   padding: 0;
@@ -95,17 +76,22 @@ const BigCard = styled.div`
   background: #24266b;
   display: grid;
   place-items: center;
-  grid-template-rows: 50px 50px 50px;
+  grid-template-rows: repeat(3, 50px);
   border-radius: 15px;
   height: 30rem;
   width: auto;
   padding: 0 2rem;
-  h2 {
-    font-size: 4rem;
+  padding-top: 1rem;
+  img {
+    height: 6rem;
+    width: auto;
+  }
+  h1 {
+    font-size: 2rem;
     font-weight: lighter;
-    padding-top: 3rem;
   }
   p {
+    margin-top: 5rem;
     padding: 2rem;
     position: absolute;
   }

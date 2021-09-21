@@ -10,8 +10,9 @@ const GlobalStyle = createGlobalStyle`
     :root {
         --primary-color: #1B1E61;
         --secondary-color: #24266B;
-        --font-color: #FFFFFF;
+        --font-color: #f8a70a;
         --button-color: #F86BC3;
+        --anchor-color: #f8a70a;
     }
 
     html {
@@ -39,6 +40,10 @@ const GlobalStyle = createGlobalStyle`
 
     li {
         letter-spacing: .5px;
+    }
+
+    a {
+        color: var(--anchor-color);
     }
 `;
 
