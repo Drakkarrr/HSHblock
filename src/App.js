@@ -7,7 +7,10 @@ import Aim from "./components/M&V";
 import AboutUsss from "./components/AboutUsss";
 import StatsTable from "./components/StatsTable";
 import Pricing from "./components/Pricing";
-import Footer from "./components/Footer";
+import TournaWeek from "./components/TournaWeek";
+import TournaYear from "./components/TournaYear";
+import Disclaimer from "./components/Disclaimer";
+import Privacy from "./components/PrivacyPolicy";
 function App() {
   return (
     <div className="App">
@@ -20,7 +23,10 @@ function App() {
       <AboutUsss />
       <StatsTable />
       <Pricing />
-      <Footer />
+      <TournaWeek />
+      <TournaYear />
+      <Disclaimer />
+      <Privacy />
     </div>
   );
 }
