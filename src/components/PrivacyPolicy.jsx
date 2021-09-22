@@ -120,6 +120,5 @@ const Disclaimer = () => {
 export default Disclaimer;
 
 const StyledPrivacy = styled(StyledFooter)`
-  background-color: red;
   padding: 5rem 0;
 `;
