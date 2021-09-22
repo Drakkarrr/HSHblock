@@ -1,4 +1,5 @@
 // import styled from "styled-components";
+import styled from "styled-components";
 import BoxLogo from "./assets/boxlogo.png";
 import {
   StyledFooter,
@@ -8,7 +9,7 @@ import {
 
 const Disclaimer = () => {
   return (
-    <StyledFooter>
+    <StyledPrivacy>
       <StyledLetterContainer>
         <StyledDescription>
           <img src={BoxLogo} alt="Block logo of Hashblock" />
@@ -112,8 +113,13 @@ const Disclaimer = () => {
           records.
         </p>
       </StyledLetterContainer>
-    </StyledFooter>
+    </StyledPrivacy>
   );
 };
 
 export default Disclaimer;
+
+const StyledPrivacy = styled(StyledFooter)`
+  background-color: red;
+  padding: 5rem 0;
+`;
