@@ -15,7 +15,7 @@ const Disclaimer = () => {
           <img src={BoxLogo} alt="Block logo of Hashblock" />
           <h2>PRIVACY POLICY</h2>
         </StyledDescription>
-        <p style={{ lineHeight: "15px" }}>
+        <p style={{ lineHeight: "18px" }}>
           <span style={{ fontSize: "1.3rem" }}>Section A – Introduction</span>
           <br />
           <br /> 1. Introduction <br /> 1.1 Protecting your privacy and keeping

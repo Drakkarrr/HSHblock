@@ -87,7 +87,7 @@ const StyledDescription = styled.div`
     background: none;
     font-size: 1rem;
     padding: 1rem 2rem;
-    margin-left: 1rem;
+
     border-radius: 20px;
     cursor: pointer;
     &:hover {

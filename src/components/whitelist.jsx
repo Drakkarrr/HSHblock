@@ -129,10 +129,6 @@ const StyledSection = styled.div`
   @media only screen and ${device.sm} {
     height: auto;
   }
-
-  /* @media only screen and ${device.lg} {
-    background: green;
-  } */
 `;
 
 const StyledDescription = styled.div`
@@ -184,7 +180,7 @@ const CardContainer = styled.div`
   p {
     text-align: start;
     margin-top: 1.5rem;
-    font-size: 9px;
+    font-size: 3px;
   }
   td,
   th,
@@ -192,7 +188,7 @@ const CardContainer = styled.div`
     border: 1px solid black;
     width: 20rem;
     height: auto;
-    font-size: 9px;
+    font-size: 5px;
     text-align: center;
     vertical-align: middle;
   }

@@ -93,7 +93,6 @@ export const StyledLetterContainer = styled.div`
   background: #24266b;
   border-radius: 20px;
   padding: 5rem;
-  /* text-align: center; */
 `;
 
 export const StyledDescription = styled.div`
