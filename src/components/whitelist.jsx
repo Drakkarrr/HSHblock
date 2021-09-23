@@ -125,12 +125,14 @@ const StyledSection = styled.div`
   @media only screen and ${device.xs} {
     height: 80vh;
   }
+
   @media only screen and ${device.sm} {
-    background: blue;
+    height: auto;
   }
-  @media only screen and ${device.lg} {
+
+  /* @media only screen and ${device.lg} {
     background: green;
-  }
+  } */
 `;
 
 const StyledDescription = styled.div`
@@ -147,10 +149,26 @@ const StyledDescription = styled.div`
     font-size: 2.3rem;
   }
 
+  //!  Media Query
   @media only screen and ${device.xs} {
     h2 {
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin-bottom: 2rem;
+    }
+
+    img {
+      height: 10rem;
+    }
+  }
+
+  @media only screen and ${device.sm} {
+    margin-top: 0;
+    h2 {
+      font-size: 3rem;
+    }
+
+    img {
+      height: 10rem;
     }
   }
 `;
@@ -177,5 +195,31 @@ const CardContainer = styled.div`
     font-size: 9px;
     text-align: center;
     vertical-align: middle;
+  }
+
+  //!  Media Query
+  @media only screen and ${device.xs} {
+    p {
+      font-size: 12px;
+    }
+  }
+
+  td,
+  th,
+  tr {
+    font-size: 12px;
+  }
+
+  @media only screen and ${device.sm} {
+    p {
+      font-size: 15px;
+    }
+    td,
+    th,
+    tr {
+      width: 40rem;
+      height: 3rem;
+      font-size: 15px;
+    }
   }
 `;
