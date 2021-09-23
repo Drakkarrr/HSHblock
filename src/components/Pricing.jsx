@@ -3,7 +3,7 @@ import boxlogo from "./assets/boxlogo.png";
 
 const Pricing = () => {
   return (
-    <StyledSection id="pricing">
+    <StyledSection id="tournament">
       <StyledDescription>
         <img src={boxlogo} alt="Box logo of hshblock" />
         <h4>HSHBLOCK brings you fun &amp; exciting tournament</h4>

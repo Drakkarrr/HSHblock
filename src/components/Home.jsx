@@ -1,29 +1,50 @@
 import styled from "styled-components";
 import logo from "./assets/hblogo.png";
-import { Link } from "react-router-dom";
+import Header from "./Header";
+import AboutUs from "./AboutUs";
+import AboutUss from "./AboutUss";
+import Aim from "./M&V";
+import AboutUsss from "./AboutUsss";
+import StatsTable from "./StatsTable";
+import Pricing from "./Pricing";
+import TournaWeek from "./TournaWeek";
+import TournaYear from "./TournaYear";
+import Disclaimer from "./Disclaimer";
+import Privacy from "./PrivacyPolicy";
 
 const Home = () => {
   return (
-    <StyledHome id="home">
-      <StyledImage>
-        <img src={logo} alt="Block logo og hashblock" />
-      </StyledImage>
-      <StyledDescription>
-        <h4>Welcome to</h4>
-        <h1>HSHBLOCK !</h1>
-        <p>
-          A secured &amp; trusted community friendly crypto trading &amp;
-          exchange platform for everybody.
-        </p>
-        <div className="buttons">
-          <button>
-            <Link to="#" target="_blank">
-              See Our Whitepaper
-            </Link>
-          </button>
-        </div>
-      </StyledDescription>
-    </StyledHome>
+    <>
+      <Header />
+      <StyledHome id="home">
+        <StyledImage>
+          <img src={logo} alt="Block logo og hashblock" />
+        </StyledImage>
+        <StyledDescription>
+          <h4>Welcome to</h4>
+          <h1>HSHBLOCK !</h1>
+          <p>
+            A secured &amp; trusted community friendly crypto trading &amp;
+            exchange platform for everybody.
+          </p>
+          <div className="buttons">
+            <button>
+              <a href="#about">About HSHBLOCK</a>
+            </button>
+          </div>
+        </StyledDescription>
+      </StyledHome>
+      <AboutUs />
+      <AboutUss />
+      <Aim />
+      <AboutUsss />
+      <StatsTable />
+      <Pricing />
+      <TournaWeek />
+      <TournaYear />
+      <Disclaimer />
+      <Privacy />
+    </>
   );
 };
 

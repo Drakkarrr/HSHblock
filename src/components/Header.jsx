@@ -1,5 +1,6 @@
 import boxlogo from "./assets/boxlogo.png";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -15,10 +16,12 @@ const Header = () => {
           <a href="#about">About Us</a>
         </li>
         <li>
-          <a href="#pricing">Pricing</a>
+          <a href="#tournament">Tournament</a>
         </li>
         <li>
-          <a href="#contact">Contact Us</a>
+          <Link to="/whitelist" target="_blank">
+            Our Whitelist
+          </Link>
         </li>
       </StyledLinks>
     </StyledHeader>

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { StyledButton } from "./Cards";
 import boxlogo from "./assets/boxlogo.png";
@@ -15,7 +14,7 @@ const Works = () => {
             </h2>
             <p>Invest • Play • Earn</p>
             <Button>
-              <Link to="#">Download Whitepaper</Link>
+              <a href="#tournament">See Our Tournaments</a>
             </Button>
           </StyledText>
           <CardBig>
