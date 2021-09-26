@@ -1,63 +1,66 @@
+import ScrollAnimation from "react-animate-on-scroll";
 import styled from "styled-components";
 import boxlogo from "./assets/boxlogo.png";
 
 const TournaWeek = () => {
   return (
-    <StyledSection id="pricing">
-      <StyledDescription>
-        <img src={boxlogo} alt="Box logo of hshblock" />
-        <h2>WEEKLY TOURNAMENTS REWARDS LAND OF FIGHTER</h2>
-      </StyledDescription>
-      <CardContainer>
-        <tr>
-          <th colSpan="3">Ranking Rewards</th>
-        </tr>
+    <ScrollAnimation animateIn="wobble" initiallyVisible={true}>
+      <StyledSection id="pricing">
+        <StyledDescription>
+          <img src={boxlogo} alt="Box logo of hshblock" />
+          <h2>WEEKLY TOURNAMENTS REWARDS LAND OF FIGHTER</h2>
+        </StyledDescription>
+        <CardContainer>
+          <tr>
+            <th colSpan="3">Ranking Rewards</th>
+          </tr>
 
-        <tr>
-          <th colSpan="3">Weekly Tournament </th>
-        </tr>
+          <tr>
+            <th colSpan="3">Weekly Tournament </th>
+          </tr>
 
-        <tr className="custom1">
-          <td>Rank 1</td>
-          <td colSpan="3">20% of the Total Entry Pool</td>
-        </tr>
+          <tr className="custom1">
+            <td>Rank 1</td>
+            <td colSpan="3">20% of the Total Entry Pool</td>
+          </tr>
 
-        <tr>
-          <td>Rank 2</td>
-          <td colSpan="3">10% of the Total Entry Pool</td>
-        </tr>
-        <tr>
-          <td>Rank 3</td>
-          <td colSpan="3">7% of the Total Entry Pool</td>
-        </tr>
-        <tr>
-          <td>Rank 4 to 20</td>
-          <td colSpan="3">10% of the Total Entry Pool divided by 17</td>
-        </tr>
-        <tr>
-          <td>Yearly Event Pool</td>
-          <td colSpan="3">20% of the Total Entry Pool</td>
-        </tr>
+          <tr>
+            <td>Rank 2</td>
+            <td colSpan="3">10% of the Total Entry Pool</td>
+          </tr>
+          <tr>
+            <td>Rank 3</td>
+            <td colSpan="3">7% of the Total Entry Pool</td>
+          </tr>
+          <tr>
+            <td>Rank 4 to 20</td>
+            <td colSpan="3">10% of the Total Entry Pool divided by 17</td>
+          </tr>
+          <tr>
+            <td>Yearly Event Pool</td>
+            <td colSpan="3">20% of the Total Entry Pool</td>
+          </tr>
 
-        <tr>
-          <td>In Game Normal Rewards Pool</td>
-          <td colSpan="3">15% of the Total Entry Pool</td>
-        </tr>
+          <tr>
+            <td>In Game Normal Rewards Pool</td>
+            <td colSpan="3">15% of the Total Entry Pool</td>
+          </tr>
 
-        <tr>
-          <td>In Game Maintenance</td>
-          <td colSpan="3">15% of the Total Entry Pool</td>
-        </tr>
+          <tr>
+            <td>In Game Maintenance</td>
+            <td colSpan="3">15% of the Total Entry Pool</td>
+          </tr>
 
-        <tr>
-          <td className="custom">
-            Community Rewards with at least 250 $Block and 1 Fighter holding
-            throughout the month (Game Spectator - Lottery)
-          </td>
-          <td colSpan="3">3% of the Total Entry Pool</td>
-        </tr>
-      </CardContainer>
-    </StyledSection>
+          <tr>
+            <td className="custom">
+              Community Rewards with at least 250 $Block and 1 Fighter holding
+              throughout the month (Game Spectator - Lottery)
+            </td>
+            <td colSpan="3">3% of the Total Entry Pool</td>
+          </tr>
+        </CardContainer>
+      </StyledSection>
+    </ScrollAnimation>
   );
 };
 

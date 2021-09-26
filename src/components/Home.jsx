@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ScrollAnimation from "react-animate-on-scroll";
 import logo from "./assets/hblogo.png";
 import Header from "./Header";
 import AboutUs from "./AboutUs";
@@ -17,22 +18,26 @@ const Home = () => {
     <>
       <Header />
       <StyledHome id="home">
-        <StyledImage>
-          <img src={logo} alt="Block logo og hashblock" />
-        </StyledImage>
-        <StyledDescription>
-          <h4>Welcome to</h4>
-          <h1>HSHBLOCK !</h1>
-          <p>
-            A secured &amp; trusted community friendly crypto trading &amp;
-            exchange platform for everybody.
-          </p>
-          <div className="buttons">
-            <button>
-              <a href="#about">About HSHBLOCK</a>
-            </button>
-          </div>
-        </StyledDescription>
+        <ScrollAnimation animateIn="flipInY" animateOut="flipOutY">
+          <StyledImage>
+            <img src={logo} alt="Block logo og hashblock" />
+          </StyledImage>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="flipInY" animateOut="flipOutY">
+          <StyledDescription>
+            <h4>Welcome to</h4>
+            <h1>HSHBLOCK !</h1>
+            <p>
+              A secured &amp; trusted community friendly crypto trading &amp;
+              exchange platform for everybody.
+            </p>
+            <div className="buttons">
+              <button>
+                <a href="#about">About HSHBLOCK</a>
+              </button>
+            </div>
+          </StyledDescription>
+        </ScrollAnimation>
       </StyledHome>
       <AboutUs />
       <AboutUss />

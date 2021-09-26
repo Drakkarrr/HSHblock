@@ -1,33 +1,39 @@
 import styled from "styled-components";
 import boxlogo from "./assets/boxlogo.png";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Blogs = () => {
   return (
     <StyledContainer>
-      <CardBig>
-        <BigCard>
-          <img src={boxlogo} alt="Block logo" />
-          <h1>WHY WE BUILD HSHBLOCK?</h1>
-          <p>
-            We built HSHBLOCK because of our frustrations in the crypto world.
-            There are lots of investors, including ourselves, that have been
-            scammed all the time by these opportunistic people. Their only
-            purpose is to rob the money of the community. We built HSHBLOCK to
-            protect the investments of the community, grow exponentially, and to
-            end the traditional NFT idle game.
-          </p>
-        </BigCard>
-      </CardBig>
-      <CardBig>
-        <BigCard>
-          <img src={boxlogo} alt="Block logo" />
-          <h1>WHAT IS #BLOCK?</h1>
-          <p style={{ marginTop: 0 }}>
-            $BLOCK is our in-game token that will circulate in the ecosystem of
-            our game and other future projects.
-          </p>
-        </BigCard>
-      </CardBig>
+      <ScrollAnimation animateIn="flipInX">
+        <CardBig>
+          <BigCard>
+            <img src={boxlogo} alt="Block logo" />
+            <h1>WHY WE BUILD HSHBLOCK?</h1>
+            <p>
+              We built HSHBLOCK because of our frustrations in the crypto world.
+              There are lots of investors, including ourselves, that have been
+              scammed all the time by these opportunistic people. Their only
+              purpose is to rob the money of the community. We built HSHBLOCK to
+              protect the investments of the community, grow exponentially, and
+              to end the traditional NFT idle game.
+            </p>
+          </BigCard>
+        </CardBig>
+      </ScrollAnimation>
+
+      <ScrollAnimation animateIn="flipInX">
+        <CardBig>
+          <BigCard>
+            <img src={boxlogo} alt="Block logo" />
+            <h1>WHAT IS #BLOCK?</h1>
+            <p style={{ marginTop: 0 }}>
+              $BLOCK is our in-game token that will circulate in the ecosystem
+              of our game and other future projects.
+            </p>
+          </BigCard>
+        </CardBig>
+      </ScrollAnimation>
     </StyledContainer>
   );
 };

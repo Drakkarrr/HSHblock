@@ -1,48 +1,51 @@
 import styled from "styled-components";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const MyComponent = () => {
   return (
     <StyledTableContainer>
-      <StyledTable>
-        <tr>
-          <th colSpan="2">DAILY QUEST</th>
-          <th>REWARDS</th>
-        </tr>
-        <tr>
-          <td>Survival Mode</td>
-          <td>Minimum 1 Fighter</td>
-          <td>$BLOCK</td>
-        </tr>
-        <tr>
-          <td>PVP</td>
-          <td>Minimum 3 Fighters</td>
-          <td>$BLOCK</td>
-        </tr>
-        <tr>
-          <td>PRACTICE MODE</td>
-          <td></td>
-          <td>NO REWARD</td>
-        </tr>
+      <ScrollAnimation animateIn="flipInY" animateOut="flipOutY">
+        <StyledTable>
+          <tr>
+            <th colSpan="2">DAILY QUEST</th>
+            <th>REWARDS</th>
+          </tr>
+          <tr>
+            <td>Survival Mode</td>
+            <td>Minimum 1 Fighter</td>
+            <td>$BLOCK</td>
+          </tr>
+          <tr>
+            <td>PVP</td>
+            <td>Minimum 3 Fighters</td>
+            <td>$BLOCK</td>
+          </tr>
+          <tr>
+            <td>PRACTICE MODE</td>
+            <td></td>
+            <td>NO REWARD</td>
+          </tr>
 
-        <br />
-        <br />
+          <br />
+          <br />
 
-        <tr>
-          <th colSpan="2">MONTHLY QUEST</th>
-          <th>REWARDS</th>
-        </tr>
-        <tr>
-          <td>BOSS FIGHT</td>
-          <td>Minimum 1 Fighter</td>
-          <td>$BLOCK</td>
-        </tr>
-        <p>
-          *** FIGHTER STAMINA WILL RESET AT 00:00 UTC <br />
-          *** BOTS AND CHEATS WILL BE TOTALLY BANNED <br /> *** EVERY MONTH 1
-          NEW CHARACTER WILL BE ADDED IN MARKET <br /> *** WITHDRAWAL AFTER 15
-          DAYS
-        </p>
-      </StyledTable>
+          <tr>
+            <th colSpan="2">MONTHLY QUEST</th>
+            <th>REWARDS</th>
+          </tr>
+          <tr>
+            <td>BOSS FIGHT</td>
+            <td>Minimum 1 Fighter</td>
+            <td>$BLOCK</td>
+          </tr>
+          <p>
+            *** FIGHTER STAMINA WILL RESET AT 00:00 UTC <br />
+            *** BOTS AND CHEATS WILL BE TOTALLY BANNED <br /> *** EVERY MONTH 1
+            NEW CHARACTER WILL BE ADDED IN MARKET <br /> *** WITHDRAWAL AFTER 15
+            DAYS
+          </p>
+        </StyledTable>
+      </ScrollAnimation>
     </StyledTableContainer>
   );
 };

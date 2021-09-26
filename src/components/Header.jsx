@@ -10,16 +10,22 @@ const Header = () => {
       </StyledLogoContainer>
       <StyledLinks>
         <li>
-          <a href="#home">Home</a>
+          <a className="cool-link" href="#home">
+            Home
+          </a>
         </li>
         <li>
-          <a href="#about">About Us</a>
+          <a className="cool-link" href="#about">
+            About Us
+          </a>
         </li>
         <li>
-          <a href="#tournament">Tournament</a>
+          <a className="cool-link" href="#tournament">
+            Tournament
+          </a>
         </li>
         <li>
-          <Link to="/whitelist" target="_blank">
+          <Link className="cool-link" to="/whitelist" target="_blank">
             Our Whitelist
           </Link>
         </li>
@@ -42,7 +48,6 @@ const StyledHeader = styled.nav`
 
   //!  Media Query
   @media (max-width: 575.98px) {
-    background: red;
     width: 100%;
   }
 
@@ -80,9 +85,33 @@ const StyledLinks = styled.div`
   justify-content: space-evenly;
   list-style: none;
   cursor: pointer;
+  li {
+    margin-bottom: 5px;
+  }
+
+  li.cool-link {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .cool-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #f86bc3;
+    transition: width 0.3s;
+  }
+
+  .cool-link:hover::after {
+    width: 100%;
+  }
+
   a {
     text-decoration: none;
     color: #f8a70a;
+    width: 0;
+    height: 2px;
     &:hover {
       color: #f86bc3;
     }

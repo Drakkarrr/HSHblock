@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import boxlogo from "./assets/boxlogo.png";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const JoinUs = () => {
   return (
@@ -11,21 +12,24 @@ const JoinUs = () => {
           <SmallCards /> */}
         </CardsSmall>
         <CardBig>
-          <BigCard>
-            <img src={boxlogo} alt="Block logo" />
-            <h1>WHAT IS HSHBLOCK?</h1>
-            <p>
-              HSHBLOCK is a wide platform that is focused on helping the
-              community through our multiple play to earn game features. It is a
-              platform integrated into Binance Smart Chain that will
-              revolutionize the NFT gaming award system such as: In-game
-              rewards, NFT/$BLOCK staking, and Player-to-Player Tradeoff. <br />
-              <br />
-              HSHBLOCK will also engage in trading and exchange platforms and
-              other blockchain services. Through our $BLOCK token, we will
-              achieve all our long-term plans for the good of our community.
-            </p>
-          </BigCard>
+          <ScrollAnimation animateIn="fadeIn">
+            <BigCard>
+              <img src={boxlogo} alt="Block logo" />
+              <h1>WHAT IS HSHBLOCK?</h1>
+              <p>
+                HSHBLOCK is a wide platform that is focused on helping the
+                community through our multiple play to earn game features. It is
+                a platform integrated into Binance Smart Chain that will
+                revolutionize the NFT gaming award system such as: In-game
+                rewards, NFT/$BLOCK staking, and Player-to-Player Tradeoff.{" "}
+                <br />
+                <br />
+                HSHBLOCK will also engage in trading and exchange platforms and
+                other blockchain services. Through our $BLOCK token, we will
+                achieve all our long-term plans for the good of our community.
+              </p>
+            </BigCard>
+          </ScrollAnimation>
         </CardBig>
         <CardsSmall>
           {/* <SmallCards />
