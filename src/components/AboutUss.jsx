@@ -39,11 +39,24 @@ const StyledContainer = styled.div`
   margin-top: 4rem;
   display: flex;
   justify-content: space-around;
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    display: block;
+    height: auto;
+  }
 `;
 
 const CardBig = styled.div`
   position: relative;
   width: 30rem;
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    width: 100vw;
+    padding: 0 2rem;
+    height: 90vw;
+  }
 `;
 
 const BigCard = styled.div`
@@ -68,5 +81,13 @@ const BigCard = styled.div`
     margin-top: 5rem;
     padding: 2rem;
     position: absolute;
+  }
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    width: 90vw;
+    p {
+      font-size: 1.2rem;
+    }
   }
 `;

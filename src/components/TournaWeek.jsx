@@ -70,6 +70,18 @@ export const StyledSection = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-bottom: 3rem;
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    height: 75vh;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8rem;
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    height: 100vh;
+  }
 `;
 
 export const StyledDescription = styled.div`
@@ -88,6 +100,21 @@ export const StyledDescription = styled.div`
   }
   h2 {
     font-size: 2.3rem;
+  }
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    margin-top: 0;
+    width: 100%;
+    height: 25vh;
+    padding: 0 5rem;
+    text-align: center;
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    h2 {
+      font-size: 1.7rem;
+    }
   }
 `;
 
@@ -110,5 +137,23 @@ export const CardContainer = styled.div`
   }
   td.custom {
     padding: 0 10px;
+  }
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    width: 90%;
+    padding: 1rem 2rem;
+    margin: 0;
+    td,
+    th,
+    tr {
+      width: 50%;
+      height: 2.3rem;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    height: 55vh;
+    padding: 2rem 4rem;
   }
 `;

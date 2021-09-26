@@ -39,6 +39,28 @@ const StyledHeader = styled.nav`
   width: 100vw;
   padding: 1rem 8rem;
   z-index: 3;
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    background: red;
+    width: 100%;
+  }
+
+  /* @media (min-width: 576px) and (max-width: 767.98px) {
+    background: green;
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    background: blue;
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    background: orange;
+  }
+
+  @media (min-width: 1200px) {
+    background: violet;
+  } */
 `;
 
 const StyledLogoContainer = styled.div`

@@ -62,6 +62,17 @@ const StyledHome = styled.section`
     rgba(29, 29, 99, 1) 0%,
     rgba(88, 48, 149, 1) 50%
   );
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    display: block;
+    width: 100vw;
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    display: block;
+    height: 150vh;
+  }
 `;
 
 const StyledDescription = styled.div`
@@ -106,5 +117,21 @@ const StyledImage = styled.div`
   img {
     height: 90%;
     width: auto;
+  }
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    width: 100vw;
+    img {
+      height: 35rem;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    img {
+      height: 100vh;
+      width: 100%;
+    }
   }
 `;

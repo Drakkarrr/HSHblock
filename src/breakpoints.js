@@ -9,5 +9,3 @@ export const device = {
   sm: `(min-width: ${size.sm})`,
   lg: `(min-width: ${size.lg})`,
 };
-
-// export default device;

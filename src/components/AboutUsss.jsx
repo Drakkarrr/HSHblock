@@ -41,7 +41,7 @@ const Works = () => {
         <div className="ads"></div>
         <StyledAzumi>
           <img src={boxlogo} alt="Block logo" />
-          <h1>LAND OF FIGHTER INGAME PLAY TO EARN</h1>
+          <h1 className="custom">LAND OF FIGHTER INGAME PLAY TO EARN</h1>
           <p>
             Land of Fighter is one of the games that HSHBLOCK developed. The
             game features a total of 30 Fighters. Every Fighter has its own
@@ -128,6 +128,13 @@ const BigCard = styled.div`
     padding: 2rem;
     position: absolute;
   }
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    h1 {
+      padding-bottom: 1rem;
+    }
+  }
 `;
 
 const StyledSawera = styled.div`
@@ -159,5 +166,24 @@ const StyledAzumi = styled.div`
     margin-top: 3rem;
     padding: 2rem;
     position: absolute;
+  }
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    h1 {
+      font-weight: lighter;
+      padding: 0 35px;
+      padding-top: 15px;
+      text-align: center;
+    }
+
+    p {
+      position: relative;
+      top: 70px;
+      margin: 0;
+      padding: 0;
+      padding-top: 4px;
+      font-size: 1.1rem;
+    }
   }
 `;

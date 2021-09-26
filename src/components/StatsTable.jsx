@@ -54,6 +54,12 @@ const StyledTableContainer = styled.div`
   padding: 1rem 8rem;
   display: grid;
   justify-content: center;
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    width: 100vw;
+    height: 50vh;
+  }
 `;
 
 const StyledTable = styled.div`
@@ -74,5 +80,14 @@ const StyledTable = styled.div`
     border: 1px solid black;
     width: 20rem;
     height: auto;
+  }
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    width: 95vw;
+    height: 28rem;
+    p {
+      font-size: 8.6px;
+    }
   }
 `;

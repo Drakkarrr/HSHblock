@@ -34,7 +34,12 @@ const StyledAim = styled.section`
   padding: 3rem 5rem;
   display: grid;
   grid-auto-flow: column;
-  margin-top: 3rem;
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    margin: 0;
+    padding: 1rem 2rem;
+  }
 `;
 
 const StyledCard = styled.div`
@@ -43,7 +48,7 @@ const StyledCard = styled.div`
   place-items: center;
   grid-template-rows: 50px 50px 60px 60px 47px;
   border-radius: 15px;
-  height: 30rem;
+  height: 100vh;
   width: auto;
   padding: 0 7rem;
   padding-top: 1rem;
@@ -56,5 +61,15 @@ const StyledCard = styled.div`
   h1 {
     font-size: 2rem;
     font-weight: lighter;
+  }
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    height: auto;
+    grid-template-rows: 70px 70px 230px 80px 120px;
+
+    p {
+      font-size: 1.3rem;
+    }
   }
 `;

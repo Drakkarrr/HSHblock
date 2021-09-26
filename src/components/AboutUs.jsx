@@ -40,21 +40,33 @@ const JoinUs = () => {
 export default JoinUs;
 
 const StyledSection = styled.section`
+  height: 100vh;
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 1fr;
   place-items: center;
   padding-top: 3rem;
-  height: 100vh;
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    width: 100vw;
+    height: 61vh;
+    padding-top: 0;
+  }
 `;
 
 const CardContainer = styled.div`
   height: 80%;
-  width: 100%;
   padding: 1rem 3rem;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-auto-flow: column;
   justify-content: center;
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    height: auto;
+    width: 100%;
+  }
 `;
 
 const CardsSmall = styled.div`
@@ -63,6 +75,12 @@ const CardsSmall = styled.div`
   place-items: center;
   padding: 0;
   margin: 0;
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    background: gray;
+    display: none;
+  }
 `;
 
 const CardBig = styled.div`
@@ -70,6 +88,13 @@ const CardBig = styled.div`
   display: grid;
   margin: 0;
   padding: 0;
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    padding: 0;
+    margin: 0;
+    width: 83vw;
+  }
 `;
 
 const BigCard = styled.div`
@@ -79,8 +104,8 @@ const BigCard = styled.div`
   grid-template-rows: repeat(3, 50px);
   border-radius: 15px;
   height: 30rem;
-  width: auto;
-  padding: 0 2rem;
+  width: 55rem;
+  padding: 0 1rem;
   padding-top: 1rem;
   img {
     height: 6rem;
@@ -91,8 +116,20 @@ const BigCard = styled.div`
     font-weight: lighter;
   }
   p {
-    margin-top: 5rem;
-    padding: 2rem;
+    padding: 1rem;
     position: absolute;
+    font-size: 1rem;
+  }
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    height: 60vh;
+    width: 100%;
+    p {
+      height: 21rem;
+      font-size: 1.2rem;
+      margin-top: 3rem;
+      padding: 0 1rem;
+    }
   }
 `;

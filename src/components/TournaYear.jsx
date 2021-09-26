@@ -64,4 +64,9 @@ const StyledCardContainer = styled(CardContainer)`
   td.custom {
     padding: 0 10px;
   }
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    width: 90%;
+  }
 `;

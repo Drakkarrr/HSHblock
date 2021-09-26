@@ -86,6 +86,15 @@ const StyledSection = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-bottom: 3rem;
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    height: 150%;
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    height: 140vh;
+  }
 `;
 
 const StyledDescription = styled.div`
@@ -104,6 +113,18 @@ const StyledDescription = styled.div`
   }
   h2 {
     font-size: 2.3rem;
+  }
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    margin-bottom: 4rem;
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    margin-top: 2rem;
+    h2 {
+      font-size: 1.7rem;
+    }
   }
 `;
 
@@ -129,5 +150,16 @@ const CardContainer = styled.div`
     font-size: 9px;
     text-align: center;
     vertical-align: middle;
+  }
+
+  //!  Media Query
+  @media (max-width: 575.98px) {
+    width: 95%;
+    height: 50rem;
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    height: 100vw;
+    margin-bottom: 10rem;
   }
 `;
