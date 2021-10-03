@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
     html {
         font-size: 62.5%;
         scroll-behavior: smooth;
+        overflow-x: hidden;
     }
 
     body {
@@ -27,6 +28,24 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1rem;
         line-height: 1.5;
     }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        background: red;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        background: blue;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    body {
+        background: green;
+    }
+  }
     
     h1, h2, h3 {
         font-family: 'Anton', sans-serif;
