@@ -64,11 +64,11 @@ const Navbar = () => {
               Whitelist
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/contact-us" className="hvr-pulse-shrink">
               Contact us
             </NavLink>
-          </li>
+          </li> */}
         </Navlinks>
 
         <div className="px-4 cursor-pointer w-full md:hidden flex justify-end items-end">
@@ -128,11 +128,11 @@ const Navbar = () => {
                       Whitelist
                     </NavLink>
                   </li>
-                  <li>
+                  {/* <li>
                     <NavLink to="/contact-us" className="hvr-pulse-shrink">
                       Contact us
                     </NavLink>
-                  </li>
+                  </li> */}
                 </div>
               </MobileNav>
             </div>
@@ -148,6 +148,14 @@ export default Navbar;
 const Nav = styled.nav`
   background: #fbf6f6;
   border-bottom: 1px solid black;
+
+  //! Media Query
+  @media (min-width: 640px) {
+    li {
+      padding: 5px;
+      margin-left: 8px;
+    }
+  }
 
   /* @media (max-width: 638.98px) {
     background: orange;
@@ -179,7 +187,7 @@ const Navlinks = styled.nav`
   }
 
   @media (max-width: 638.98px) {
-    background: #000000;
+    background: #fbf6f6;
     display: block;
     position: absolute;
     margin-top: 17rem;
@@ -190,17 +198,18 @@ const Navlinks = styled.nav`
 `;
 
 const MobileNav = styled.div`
-  background: #000000;
+  background: #fbf6f6;
   color: #f8a70a;
   font-size: 1.2rem;
   font-weight: bold;
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 60vh;
   margin-top: 1.8rem;
   left: 0;
   text-align: center;
   li {
     list-style: none;
+    padding: 1rem;
   }
 `;

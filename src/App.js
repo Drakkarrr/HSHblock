@@ -8,7 +8,7 @@ import Privacy from "./pages/Privacy";
 import Disclaimer from "./pages/Disclaimer";
 import Whitepaper from "./pages/Whitepaper";
 import Whitelist from "./pages/Whitelist";
-import ContactUs from "./pages/ContactUs";
+// import ContactUs from "./pages/ContactUs";
 import Footer from "./components/view/Footer";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
         <Route path="/disclaimer" component={Disclaimer} />
         <Route path="/whitepaper" component={Whitepaper} />
         <Route path="/whitelist" component={Whitelist} />
-        <Route path="/contact-us" component={ContactUs} />
+        {/* <Route path="/contact-us" component={ContactUs} /> */}
       </Switch>
       <Footer />
     </div>

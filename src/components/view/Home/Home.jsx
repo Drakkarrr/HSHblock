@@ -17,13 +17,11 @@ const HomeComponent = () => {
     <>
       <HomeContainer className=" md:container md:mx-auto min-h-screen grid pt-16 grid-flow-col grid-cols-2 place-items-center">
         <ImageContainer className="img-container">
-          <ScrollAnimation animateIn="fadeIn">
-            <img
-              className="object-fit h-full w-full p-0"
-              src={hblogo}
-              alt="hshblock landing logo"
-            />
-          </ScrollAnimation>
+          <img
+            className="object-fit h-full w-full p-0"
+            src={hblogo}
+            alt="hshblock landing logo"
+          />
         </ImageContainer>
         <ScrollAnimation animateIn="fadeIn">
           <Description className="container mx-auto px-4">
