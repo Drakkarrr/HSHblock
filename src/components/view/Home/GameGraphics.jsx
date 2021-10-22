@@ -20,13 +20,15 @@ const GameGraph = () => {
   ];
 
   return (
-    <Container className="md:container md:mx-auto min-h-screen">
+    <Container className="md:container md:mx-auto h-full">
       <center>
         <ScrollAnimation animateIn="fadeIn">
           <h1 className="p-7 font-bold text-6xl">Land Of Fighters</h1>
         </ScrollAnimation>
       </center>
-      <Carousel slides={slides} autoplay={false} />
+      <div className="slider">
+        <Carousel slides={slides} autoplay={false} />
+      </div>
     </Container>
   );
 };
@@ -36,5 +38,15 @@ export default GameGraph;
 const Container = styled.div`
   h1 {
     color: #f8a70a;
+  }
+  @media (max-width: 638.98px) {
+    height: auto;
+    .slider {
+      height: auto;
+      width: auto;
+      img {
+        height: 20rem;
+      }
+    }
   }
 `;

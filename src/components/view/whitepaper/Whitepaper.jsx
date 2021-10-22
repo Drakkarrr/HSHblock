@@ -12,10 +12,11 @@ import whitepaper11 from "../images/whitepaper11.jpg";
 import whitepaper12 from "../images/whitepaper12.jpg";
 import whitepaper13 from "../images/whitepaper13.jpg";
 import whitepaper14 from "../images/whitepaper14.jpg";
+import styled from "styled-components";
 
 const Tokenomics = () => {
   return (
-    <div className="container mx-auto px-4 pt-20">
+    <Container className="container mx-auto px-4 pt-20">
       <img src={whitepaper1} alt="hshblock whitepaper" />
       <img src={whitepaper2} alt="hshblock whitepaper" />
       <img src={whitepaper3} alt="hshblock whitepaper" />
@@ -30,8 +31,20 @@ const Tokenomics = () => {
       <img src={whitepaper12} alt="hshblock whitepaper" />
       <img src={whitepaper13} alt="hshblock whitepaper" />
       <img src={whitepaper14} alt="hshblock whitepaper" />
-    </div>
+    </Container>
   );
 };
 
 export default Tokenomics;
+
+const Container = styled.div`
+  @media (max-width: 638.98px) {
+    padding: 3.5rem 0;
+    padding-bottom: 0;
+    margin: 0;
+    img {
+      object-fit: cover;
+      height: 12.7rem;
+    }
+  }
+`;

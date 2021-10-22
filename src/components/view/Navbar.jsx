@@ -33,16 +33,7 @@ const Navbar = () => {
               Home
             </NavLink>
           </li>
-          {/* <li>
-            <NavLink to="/roadmap" className="hvr-pulse-shrink">
-              Roadmap
-            </NavLink>
-          </li> */}
-          {/* <li>
-            <NavLink to="/tokenomics" className="hvr-pulse-shrink">
-              Tokenomics
-            </NavLink>
-          </li> */}
+
           <li>
             <NavLink to="/privacy" className="hvr-pulse-shrink">
               Privacy
@@ -73,6 +64,11 @@ const Navbar = () => {
               Whitelist
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/contact-us" className="hvr-pulse-shrink">
+              Contact us
+            </NavLink>
+          </li>
         </Navlinks>
 
         <div className="px-4 cursor-pointer w-full md:hidden flex justify-end items-end">
@@ -99,16 +95,7 @@ const Navbar = () => {
                       Home
                     </NavLink>
                   </li>
-                  {/* <li>
-                    <NavLink to="/roadmap" className="hvr-pulse-shrink">
-                      Roadmap
-                    </NavLink>
-                  </li> */}
-                  {/* <li>
-                    <NavLink to="/tokenomics" className="hvr-pulse-shrink">
-                      Tokenomics
-                    </NavLink>
-                  </li> */}
+
                   <li>
                     <NavLink to="/privacy" className="hvr-pulse-shrink">
                       Privacy
@@ -141,6 +128,11 @@ const Navbar = () => {
                       Whitelist
                     </NavLink>
                   </li>
+                  <li>
+                    <NavLink to="/contact-us" className="hvr-pulse-shrink">
+                      Contact us
+                    </NavLink>
+                  </li>
                 </div>
               </MobileNav>
             </div>
@@ -157,19 +149,10 @@ const Nav = styled.nav`
   background: #fbf6f6;
   border-bottom: 1px solid black;
 
-  /* @media (min-width: 640px) {
-    background: red;
-  } */
-
   /* @media (max-width: 638.98px) {
-    transition: 2s ease-in;
     background: orange;
   }
 
-  @media (min-width: 640px) {
-    background: red;
-  } */
-  /* 
   @media (min-width: 640px) {
     background: red;
   }
